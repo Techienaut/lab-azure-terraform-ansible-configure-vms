@@ -1,0 +1,5 @@
+- name: Configure Windows Workstations
+  hosts: workstations
+  tasks:
+    - name: Test WinRM connection
+      ansible.windows.win_ping:
